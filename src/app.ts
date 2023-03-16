@@ -19,7 +19,7 @@ const seedValues = async () =>{
     if((await db.user.count())===0){
         await db.user.createMany({data:[{
             name: 'test',
-            email: 'test@123',
+            email: 'test',
             password: '123'
         }]})
     };
